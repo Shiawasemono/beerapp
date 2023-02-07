@@ -1,0 +1,17 @@
+services:
+  front:
+    build: ./beerfront
+    ports:
+      - "8080:80"
+  back:
+    build: ./beerback
+    ports:
+      - "8081:8080"
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+volumes:
+  mongodata:

@@ -1,0 +1,6 @@
+[submodule "beerfront"]
+	path = beerfront
+	url = https://github.com/Shiawasemono/beerfront
+[submodule "beerback"]
+	path = beerback
+	url = https://github.com/Shiawasemono/beerback
